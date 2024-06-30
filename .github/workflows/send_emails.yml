@@ -1,9 +1,8 @@
 name: Send Emails
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 22 */2 * *"
   workflow_dispatch:
 
 jobs:
